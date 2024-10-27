@@ -12,8 +12,15 @@ public class DialogColliderStarter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             dialogBehaviour.StartDialog(dialogGraph);
+            if (dialogGraph.name == "WizardDialog")
+            {
+                other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

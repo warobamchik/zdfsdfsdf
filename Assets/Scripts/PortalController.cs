@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PortalController : MonoBehaviour
 {
+    public string scene;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Maze");
+            SceneManager.LoadScene(scene);
         }
     }
 }
