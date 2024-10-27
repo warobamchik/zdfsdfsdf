@@ -12,6 +12,7 @@ public class DialogColliderStarter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             dialogBehaviour.StartDialog(dialogGraph);
         }
     }
