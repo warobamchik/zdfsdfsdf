@@ -24,12 +24,12 @@ public class ChairStarter : MonoBehaviour
         video.SetActive(true);
         video.GetComponent<VideoPlayer>().Play();
 
-        yield return new WaitForSeconds(81f);
+        yield return new WaitForSeconds(73f);
 
         player.transform.LookAt(video.transform.position);
         player.GetComponent<FirstPersonController>().cameraCanMove = false;
         player.transform.DORotate(new Vector3(0f, 0f, -120f), 1f);
-        player.transform.DOMove(video.transform.position - new Vector3(0.5f, 0f, 0.4f), 1f);
+        player.transform.DOMove(video.transform.position - new Vector3(0.5f, 0.1f, 0.4f), 1f);
 
         yield return new WaitForSeconds(1f);
         player.transform.position = teleportPoint.position;

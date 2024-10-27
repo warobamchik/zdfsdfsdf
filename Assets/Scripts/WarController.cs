@@ -16,7 +16,7 @@ public class WarController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && isWar == 0)
+        if (other.CompareTag("Player") && isWar == 0 && sword.activeSelf)
         {
             isWar = 1;
             foreach (GameObject enemy in enemies)

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,6 +33,7 @@ public class EnemyController : MonoBehaviour
         {
             afterAttackTimer = 0f;
             other.GetComponent<PlayerController>().hp -= damage;
+            other.GetComponent<PlayerController>().hpSlider.DOValue(other.GetComponent<PlayerController>().hp, 0.1f);
         }
     }
 }

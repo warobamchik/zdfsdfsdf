@@ -82,6 +82,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7459f20077b2db439c394a603c92409, type: 3}
       insertIndex: -1
+      addedObject: {fileID: -2999852174647096669}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7459f20077b2db439c394a603c92409, type: 3}
+      insertIndex: -1
       addedObject: {fileID: -6499173888761520853}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7459f20077b2db439c394a603c92409, type: 3}
       insertIndex: -1
@@ -92,6 +95,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b7459f20077b2db439c394a603c92409, type: 3}
   m_PrefabInstance: {fileID: 7817312991634883182}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &-2999852174647096669
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970944877034782527}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 289301614986012343, guid: b7459f20077b2db439c394a603c92409, type: 3}
 --- !u!64 &-6499173888761520853
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -128,6 +153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   isAttacking: 0
-  speed: 5
-  hp: 5
+  speed: 3
+  hp: 10
   damage: 1
