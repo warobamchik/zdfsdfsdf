@@ -1687,6 +1687,7 @@ MonoBehaviour:
   - {fileID: 102149523}
   - {fileID: 1927402394}
   - {fileID: 870487561}
+  isWar: 0
 --- !u!65 &446104254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8146,6 +8147,10 @@ PrefabInstance:
     - target: {fileID: 1278665301991309468, guid: 21f20569c0b7d10409b497ebadba6b17, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278665301991309468, guid: 21f20569c0b7d10409b497ebadba6b17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1942577552367229478, guid: 21f20569c0b7d10409b497ebadba6b17, type: 3}
       propertyPath: m_LocalPosition.x
