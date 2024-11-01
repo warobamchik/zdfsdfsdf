@@ -12,7 +12,7 @@ public class WarController : MonoBehaviour
     public GameObject portal;
 
     public List<GameObject> enemies = new List<GameObject>();
-    private int isWar = 0;
+    public int isWar = 0;
 
     private void OnTriggerEnter(Collider other)
     {
